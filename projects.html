@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Niels Lindberg-Poulsen, Portfolio</title>
+    <!-- Load font-type: Lato with weights 400 & 300 -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
+    <!-- Load stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Load minified jQuery from google cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <!-- Put everything in the page inside a wrapper, when using flex-1 on #content it will expand in the flex-direction to fill page-->
+    <div id="wrapper" class="bgcolor-2 flex flex-down">
+        <!-- Header Container -->
+        <div id="header" class="bgcolor-4 shadow">
+            <!-- Header Navigation, childs flexes on the horizontal pane from the center-->
+            <ul class="navigation flex flex-right flex-center">
+                <!-- Navigation links -->
+                <li><a href="index.html"><h3 class="text-center">Home</h3></a></li>
+                <li><a href="projects.html"><h3 class="text-center">Projects</h3></a></li>
+            </ul>
+        </div>
+        <!-- content wrapper takes up all space from top down to footer-->
+        <div id="content" class="flex flex-down flex-1 bgcolor-white shadow">
+            <!-- projects container, items flex vertically -->
+            <div id="projects" class="flex flex-down space-above">
+                <!-- header for the PDF object -->
+                <h2 class="section-header text-center">Assignment 1a, Review of Royal-Unibrew.com</h2>
+                <!-- Container for the PDF object -->
+                <div id="projectsContainer" class="projects-container border flex flex-down bgcolor-white shadow">
+                    <!-- PDF object -->
+                    <object data="pdf/1a_analys_nielin-5.pdf" type="application/pdf" width="900px" height="700px">
+                        <!-- If there is no browser support for the PDF object, the P element with download link will appear -->
+                        <p><a href="pdf/1a_analys_nielin-5.pdf">click here to download the PDF file.</a></p>
+                    </object>
+                </div>
+            </div>
+        </div>
+        <!-- Footer wrapper -->
+        <div id="footer" class="bgcolor-4 shadow-reverse">
+            <!-- Dynamic Dom insertion of contact info using the DisplayStuff function imported from builder.js -->
+        </div>
+    </div>
+    <!-- load data and dom elements from bio.js and the displayStuff function from builder.js-->
+    <script src="js/bio.js"></script>
+    <script src="js/builder.js"></script>
+    <script>
+    /* Insert DOM elements into the page */
+    displayStuff('#footer', '#contact-list', bio, bio.contactInfo, bio.htmlOuterContact);
+    </script>
+</body>
+
+</html>

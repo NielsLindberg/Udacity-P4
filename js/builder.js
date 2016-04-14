@@ -18,15 +18,18 @@ var displayStuff = function(parentContainer, sectionContainer, parentObject, sec
                 if (arrayObject.hasOwnProperty(concatObjectKey)) {
 
                     //in case the data is an array add a dom element for each value in it
+                    //on the bio.skills it adds an inner dom template for each value in the skills array.
                     var currentValue = arrayObject[concatObjectKey];
                     if (currentValue.constructor === Array) {
                         currentValue.forEach(function(arrayObjectValue) {
-                            formattedDom = formattedDom + concatObject[concatObjectKey].replace('%data%', arrayObjectValue);
+
+                            //takes the dom template and replaces all instances of %data% with the arrayValue
+                            formattedDom = formattedDom + concatObject[concatObjectKey].replace(/%data%/g, arrayObjectValue);
                         });
 
                         //else just add the dom element once
                     } else {
-                        formattedDom = formattedDom + concatObject[concatObjectKey].replace('%data%', currentValue);
+                        formattedDom = formattedDom + concatObject[concatObjectKey].replace(/%data%/g, currentValue);
                     }
                 }
             });
@@ -36,12 +39,3 @@ var displayStuff = function(parentContainer, sectionContainer, parentObject, sec
         });
     });
 };
-
-displayStuff('#header', '#header', bio, bio.headerInfo, '');
-displayStuff('#header', '#skills', bio, bio.skillsInfo, bio.htmlOuterSkills);
-displayStuff('#education', '.education-entry:last', education, education.schools, education.htmlOuterTemplate);
-displayStuff('#education', '.education-entry:last', education, education.onlineCourses, education.htmlOuterTemplate);
-displayStuff('#workExperience', '.work-entry:last', work, work.jobs, work.htmlOuterTemplate);
-displayStuff('#projects', '.project-entry:last', projects, projects.projectsInfo, projects.htmlOuterTemplate);
-
-$('#mapDiv').append(googleMap);

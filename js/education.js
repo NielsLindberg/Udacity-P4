@@ -1,52 +1,63 @@
 var education = {
-    "htmlOuterTemplate": "<div class=\"education-entry\"></div>",
+    "htmlOuterTemplate": "<section class=\"education-entry\"></section>",
     "htmlInnerTemplates": [{
-        "school": "<a href=\"#\">%data%",
-        "title": " - %data%</a>"
+        "picture": "<img class=\"edu-pic\" src=\"%data%\" ",
+        "alt": "alt=\"%data%\"></img>"
     }, {
-        "name": "<a href=\"#\">%data%",
-        "degree": " - %data%</a>"
+        "url": "<div class=\"overlay\"><a target=\"_blank\" href=\"%data%\">",
+        "name": "%data%",
+        "degree": " - %data%</a></div>"
     }, {
-        "dates": "<div class=\"date-text\">%data%</div>"
+        "description": "<aside><p class=\"school-description\">%data%</p></aside>"
     }, {
-        "location": "<div class=\"location-text\">%data%</div>"
-    }, {
-        "major": "<em><br>Major: %data%</em>"
+        "dates": "<footer><hr><p class=\"date-location-text\">%data%<br>",
+        "location": "%data%</p></footer>"
     }],
     "schools": [{
         "name": "Frederiksberg Gymnasium",
         "location": "Copenhagen, Frederiksberg, Denmark",
         "degree": "Gymnasium",
-        "major": "Mathematics, Physics, Computer Science",
-        "dates": "01/01/2009 - 01/01/2015",
-        "url": "http://www.frberg-gym.dk/"
+        "description": "Completed Gymnasium with the focus areas: Mathematics, Physics, Computer Science<br><br>\
+                        Gymnasium is the educational level between elementary school and university in Denmark",
+        "dates": "2005 - 2008",
+        "url": "http://www.frberg-gym.dk/",
+        "picture": "images/Frberggymn.png",
+        "alt": "Picture of Frederiksberg-Gymnasium"
     }, {
         "name": "Copenhagen Business School",
         "location": "Copenhagen, Frederiksberg, Denmark",
         "degree": "Bachelor",
-        "major": "Business and Administration",
-        "dates": "01/01/2009 - 01/01/2015",
-        "url": "http://www.cbs.dk/"
+        "description": "Completed a Bachelor in Business Administration",
+        "dates": "2010 - 2013",
+        "url": "http://www.cbs.dk/",
+        "picture": "images/CBS.png",
+        "alt": "Picture of Copenhagen Business School"
     }, {
         "name": "Luleå Technical University",
         "location": "Luleå, Sweden",
         "degree": "Bachelor Courses",
-        "major": "Java, C#, Introductory Web Development, Introductory Web Development (CMS), Knowledge Management",
+        "description": "Distance studying the following IT courses:<br>Java, C#, Introductory Web Development, CMS, Knowledge Management",
         "dates": "18/01/2016 - 31/06/2016 (expected)",
-        "url": "http://www.ltu.se"
+        "url": "http://www.ltu.se",
+        "picture": "images/LTU.png",
+        "alt": "Picture of Luleå Technical University"
     }, {
         "name": "Örebro University",
         "location": "Örebro, Sweden",
         "degree": "Bachelor Courses",
-        "major": "Programming in C",
+        "description": "Distane studying a course called:<br>Programming in C",
         "dates": "18/01/2016 - 31/06/2016 (expected)",
-        "url": "http://www.oru.se"
-    }],
-
-    "onlineCourses": [{
-        "title": "Front-end Web Developer",
-        "school": "Udacity",
-        "date": "10/02/2016 - 31/06/2016 (expected)",
-        "url": "http://www.udacity.com"
+        "url": "http://www.oru.se",
+        "picture": "images/ORU.png",
+        "alt": "Picture of Örebro University"
+    }, {
+        "name": "Udacity.com",
+        "location": "Online",
+        "degree": "Online degree",
+        "description": "Taking a Front End Web Developer Nanodegree at Udacity to fill up any spare time i have between my university courses.",
+        "dates": "18/01/2016 - 31/06/2016 (expected)",
+        "url": "http://www.udacity.com",
+        "picture": "images/Udacity.png",
+        "alt": "Picture of Udacity.com office"
     }]
-}
+};
