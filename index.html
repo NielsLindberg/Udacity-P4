@@ -12,34 +12,31 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
+    <div class="page-wrapper">
+        <header class="page-header">
             <nav class="navigation">
                 <ul>
                     <li><a href="index.html"><h3>Home</h3></a></li>
-                    <li><a href="projects.html"><h3>Projects</h3></a></li>
+                    <li><a href="#"><h3>Projects</h3></a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section id="bio" class="bio-container">
+        <main class="page-main">
+            <section id="bio" class="section-container">
                 <h2 class="section-header">Bio</h2>
             </section>
-            <hr>
-            <section class="work-section-container">
+            <section class="section-container">
                 <h2 class="section-header">Work Experience</h2>
-                <section id="work" class="work-item-container">
+                <section id="work" class="entry-container">
                 </section>
             </section>
-            <hr>
-            <section class="education-section-containere">
+            <section class="section-container">
                 <h2 class="section-header">Education</h2>
-                <section id="education" class="education-item-container">
+                <section id="education" class="entry-container">
                 </section>
             </section>
-            <hr>
         </main>
-        <footer id="page-footer">
+        <footer id="page-footer" class="page-footer">
         </footer>
     </div>
     <script src="js/bio.js"></script>
@@ -49,8 +46,8 @@
     <script>
     displayStuff('#bio', '#bio', bio, bio.headerInfo, '');
     displayStuff('#bio', '#skills', bio, bio.skillsInfo, bio.htmlOuterSkills);
-    displayStuff('#education', '.education-entry:last', education, education.schools, education.htmlOuterTemplate);
-    displayStuff('#work', '.work-entry:last', work, work.jobs, work.htmlOuterTemplate);
+    displayStuff('#education', '#education .entry:last', education, education.schools, education.htmlOuterTemplate);
+    displayStuff('#work', '#work .entry:last', work, work.jobs, work.htmlOuterTemplate);
     displayStuff('#page-footer', '#contact', bio, bio.contactInfo, bio.htmlOuterContact);
     </script>
 </body>

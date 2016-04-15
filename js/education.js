@@ -1,16 +1,15 @@
 var education = {
-    "htmlOuterTemplate": "<section class=\"education-entry\"></section>",
+    "htmlOuterTemplate": "<section class=\"entry\"></section>",
     "htmlInnerTemplates": [{
-        "picture": "<img class=\"edu-pic\" src=\"%data%\" ",
-        "alt": "alt=\"%data%\"></img>"
-    }, {
-        "url": "<div class=\"overlay\"><a target=\"_blank\" href=\"%data%\">",
+        "url": "<div class=\"entry-titel\"><a target=\"_blank\" href=\"%data%\">",
         "name": "%data%",
         "degree": " - %data%</a></div>"
     }, {
-        "description": "<aside><p class=\"school-description\">%data%</p></aside>"
+        "picture": "<section class=\"entry-content\"><figure class=\"entry-fig\"><img class=\"entry-pic\" src=\"%data%\" ",
+        "alt": "alt=\"%data%\"></img></figure>",
+        "description": "<aside class=\"entry-description\"><p>%data%</p></aside></section>"
     }, {
-        "dates": "<footer><hr><p class=\"date-location-text\">%data%<br>",
+        "dates": "<footer class=\"entry-footer\"><hr><p class=\"date-location-text\">%data%<br>",
         "location": "%data%</p></footer>"
     }],
     "schools": [{

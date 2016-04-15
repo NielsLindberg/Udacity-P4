@@ -1,17 +1,11 @@
 var bio = {
-
-    "htmlOuterSkills": "<h4>Skills</h4><ul id=\"skills\" class=\"skills\"></ul>",
-
     "htmlOuterContact": "<ul id=\"contact\" class=\"contact\"></ul>",
-
     "htmlInnerTemplates": [{
-
-        "bio-pic": "<div class=\"bio-header-container\"><div class=\"bio-pic-container\"><img src=\"%data%\" class=\"bio-pic\" ",
-        "alt": "alt=\"%data%\"></div>",
+        "bio-pic": "<section class=\"bio\"><div class=\"bio-banner\"><figure class=\"bio-fig\"><img src=\"%data%\" class=\"bio-pic\" ",
+        "alt": "alt=\"%data%\"></figure>",
         "name": "<h1 class=\"bio-name\" id=\"name\">%data%</h1>",
         "role": "<h3 class=\"bio-role\" id=\"role\">%data%</h3></div>",
-        "description": "<h4>About Me</h4><p class=\"about-me\">%data%</p>"
-
+        "description": "<h4>About Me</h4><p class=\"about-me\">%data%</p><h4>Skills</h4><ul id=\"skills\" class=\"skills\"></ul></section>"
     }, {
 
         "mobile": "<li class=\"contact-entry\">%data%</li>",

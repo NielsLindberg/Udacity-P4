@@ -1,15 +1,15 @@
 var work = {
-    "htmlOuterTemplate": "<section class=\"work-entry\"></section>",
+    "htmlOuterTemplate": "<section class=\"entry\"></section>",
     "htmlInnerTemplates": [{
-        "picture": "<img class=\"job-pic\" src=\"%data%\" ",
-        "alt": "alt=\"%data%\"></img>"
-    }, {
-        "url": "<div class=\"overlay\"><a target=\"_blank\" href=\"%data%\">",
+        "url": "<div class=\"entry-titel\"><a target=\"_blank\" href=\"%data%\">",
         "employer": "%data%",
         "title": " - %data%</a></div>"
+    },  {
+        "picture": "<section class=\"entry-content\"><figure class=\"entry-fig\"><img class=\"entry-pic\" src=\"%data%\" ",
+        "alt": "alt=\"%data%\"></img></figure>",
+        "description": "<aside class=\"entry-description\"><p>%data%</p></aside></section>"
     }, {
-        "description": "<p class=\"work-description\">%data%</p>",
-        "dates": "<footer><hr><p class=\"date-location-text\">%data%<br>",
+        "dates": "<footer class=\"entry-footer\"><hr><p class=\"date-location-text\">%data%<br>",
         "location": "%data%</p></footer>"
     }],
     "jobs": [{
