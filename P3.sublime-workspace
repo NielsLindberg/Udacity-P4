@@ -40,10 +40,50 @@
 	"buffers":
 	[
 		{
-			"file": "/D/workspace/udacity/P3/index.html",
+			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 2224,
+				"buffer_size": 8114,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/bio.js",
+			"settings":
+			{
+				"buffer_size": 2921,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/education.js",
+			"settings":
+			{
+				"buffer_size": 2890,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/work.js",
+			"settings":
+			{
+				"buffer_size": 2019,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/builder.js",
+			"settings":
+			{
+				"buffer_size": 1943,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2213,
 				"line_ending": "Windows"
 			}
 		}
@@ -115,10 +155,13 @@
 	"expanded_folders":
 	[
 		"/D/Workspace/Udacity",
+		"/D/Workspace/Udacity/keyboard-shortcuts",
 		"/D/Workspace/Udacity/P1",
 		"/D/Workspace/Udacity/P2",
 		"/D/Workspace/Udacity/P2/building-the-prototype",
-		"/D/Workspace/Udacity/P3"
+		"/D/Workspace/Udacity/P3",
+		"/D/Workspace/Udacity/P3/css",
+		"/D/Workspace/Udacity/P3/js"
 	],
 	"file_history":
 	[
@@ -310,30 +353,184 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/D/workspace/udacity/P3/index.html",
+					"file": "css/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2224,
+						"buffer_size": 8114,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								8114,
+								8114
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7177.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/bio.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2921,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1319,
+								1319
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/education.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2890,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1289,
+								1289
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/work.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2019,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1405,
+								1405
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/builder.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1943,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								554,
+								554
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								991,
+								991
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 288.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -416,7 +613,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 190.0,
+	"side_bar_width": 347.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
