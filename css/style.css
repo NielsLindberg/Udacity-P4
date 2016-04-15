@@ -4,6 +4,7 @@ body {
     font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
+    background-color: rgb(255, 255, 255);
 }
 
 .page-wrapper {
@@ -43,6 +44,7 @@ body {
     -ms-flex: 1;
     flex: 1;
     box-shadow: 0 0 50px 0 rgba(85, 98, 112, 0.2);
+    background-color: rgb(255, 255, 255);
 }
 
 .page-footer {
@@ -330,6 +332,7 @@ h4 {
 
 /*---------------------SPECIFIC CLASSES-------------------*/
 
+
 /*---------------------FOOTER/CONTACT-------------------*/
 
 .contact {
@@ -400,37 +403,74 @@ h4 {
     }
 }
 
-@media screen and (min-width:1001px) {
+@media screen and (min-width:1001px) and (max-width:1500px) {
     .page-main {
-        justify-content:space-between;
+        justify-content: space-between;
     }
     .bio-container {
-        width:65%;
+        width: 65%;
     }
-    .work-container {
-        width:34%;
+    .work {
+        width: 34%;
     }
-    .work-container .entry {
+    .work .entry {
         width: 100%;
     }
-    .work-container .entry-content {
+    .work .entry-content {
         -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
         justify-content: space-between;
     }
-    .work-container .entry-fig {
+    .work .entry-fig {
         width: 43%;
         -webkit-order: 2;
         -ms-flex-order: 2;
         order: 2;
     }
-    .work-container .entry-description {
+    .work .entry-description {
         width: 53%;
         -webkit-order: 1;
         -ms-flex-order: 1;
         order: 1;
     }
-    .work-container .entry-description p {
+    .work .entry-description p {
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width:1501px) {
+    .page-main {
+        justify-content: space-between;
+        max-width:1500px;
+    }
+    .bio-container {
+        width: 30%;
+    }
+    .work,
+    .education {
+        width: 34%;
+    }
+    .entry {
+        width: 49%;
+    }
+    .entry-content {
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .entry-fig {
+        width: 43%;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    .entry-description{
+        width: 53%;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .work .entry-description p {
         padding: 5px;
     }
 }
