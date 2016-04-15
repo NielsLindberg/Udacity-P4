@@ -5,11 +5,11 @@ var bio = {
         "alt": "alt=\"%data%\"></figure>",
         "name": "<h1 class=\"bio-name\" id=\"name\">%data%</h1>",
         "role": "<h3 class=\"bio-role\" id=\"role\">%data%</h3></div>",
-        "description": "<h4>About Me</h4><p class=\"about-me\">%data%</p><h4>Skills</h4><ul id=\"skills\" class=\"skills\"></ul></section>"
+        "description": "<section class=\"about-me\"><h4>About Me</h4><p>%data%</p></section><section id=\"skills\" class=\"skills\"><h4>Skills</h4><ul></ul></section></section>"
     }, {
 
-        "mobile": "<li class=\"contact-entry\">%data%</li>",
-        "email": "<li class=\"contact-entry\">%data%</li>",
+        "mobile": "<li class=\"contact-entry\"><a target=\"blank_\" href=\"#\">telephone</a></li>",
+        "email": "<li class=\"contact-entry\"><a target=\"blank_\" href=\"#\">email</a></li>",
         "github": "<li class=\"contact-entry\"><a target=\"blank_\" href=\"%data%\">github</a></li>",
         "linkedin": "<li class=\"contact-entry\"><a target=\"blank_\" href=\"%data%\">LinkedIn</a></li>"
 

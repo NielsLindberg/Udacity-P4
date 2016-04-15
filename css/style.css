@@ -44,11 +44,10 @@ body {
     -ms-flex: 1;
     flex: 1;
 
-    box-shadow: 0 0 50px 0 rgba(85, 98, 112,0.5);
+    box-shadow: 0 0 50px 0 rgba(85, 98, 112,0.2);
 }
 
 .page-footer {
-    height: 50px;
     width: 100%;
     position: relative;
     bottom: 0;
@@ -267,6 +266,8 @@ h4 {
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
     border: 1px solid rgb(220, 220, 220);
     border-radius: 2px;
+    display:flex;
+    flex-wrap:wrap;
 }
 .bio-banner {
     width: 100%;
@@ -298,7 +299,7 @@ h4 {
     background-color: rgb(255, 107, 107);
 }
 
-.skills {
+.skills ul {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -341,4 +342,49 @@ h4 {
     background-color:rgb(255, 107, 107);
     color:rgb(255,255,255);
     box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+/*------------------MEDIA QUERIES------------------------*/
+@media screen and (max-width:500px) {
+    .entry {
+        width:100%;
+    }
+    .entry-content {
+                -webkit-justify-content:space-between;
+            -ms-flex-pack:justify;
+                justify-content:space-between;
+    }
+    .entry-fig {
+        width:48%;
+        -webkit-order:2;
+            -ms-flex-order:2;
+                order:2;
+    }
+    .entry-description {
+        width:48%;
+        -webkit-order:1;
+            -ms-flex-order:1;
+                order:1;
+    }
+    .entry-description p {
+        padding:5px;
+    }
+    .bio-banner {
+        display:none;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:501px) {
+    .entry {
+        width:49%;
+    }
+}
+
+@media screen and (min-width:701px) {
+    .about-me {
+        width:60%;
+    }
+    .skills {
+        width:40%;
+    }
 }
