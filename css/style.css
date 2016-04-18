@@ -119,7 +119,6 @@ h4 {
 
 .section-container {
     padding: 10px 0 0 0;
-
 }
 
 .section-container hr {
@@ -143,8 +142,8 @@ h4 {
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-line-pack: start;
-            -webkit-align-content: flex-start;
-            align-content: flex-start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
     border: 1px solid rgb(220, 220, 220);
     border-radius: 2px;
@@ -154,34 +153,34 @@ h4 {
 
 .entry-titel {
     border-radius: 1px;
-    padding:5px;
+    padding: 5px;
     width: calc((100% - 5px * 2));
     text-align: center;
-     transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
 }
 
 .bio-container i {
-    color:rgb(78,107,102);
+    color: rgb(78, 107, 102);
 }
 
 .work .entry-titel {
-    background-color: rgb(89,86,67);
+    background-color: rgb(89, 86, 67);
 }
 
 .work i {
-    color:rgb(89,86,67);
+    color: rgb(89, 86, 67);
 }
 
 .education .entry-titel {
-    background-color: rgb(237,131,78);
+    background-color: rgb(237, 131, 78);
 }
 
 .education i {
-    color:rgb(237,131,78);
+    color: rgb(237, 131, 78);
 }
 
 .entry-titel:hover {
-    background-color: rgb(128,188,163);
+    background-color: rgb(128, 188, 163);
 }
 
 .entry-content {
@@ -195,8 +194,8 @@ h4 {
     flex-wrap: wrap;
     /*picture starts under header, text under picture*/
     -ms-flex-line-pack: start;
-            -webkit-align-content: flex-start;
-            align-content: flex-start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
     /*push footer*/
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -215,8 +214,8 @@ h4 {
 }
 
 .entry-description {
-    margin:5px;
-    padding:0;
+    margin: 5px;
+    padding: 0;
     width: calc((100% - 5px * 2 * 2)/2);
 }
 
@@ -236,6 +235,8 @@ h4 {
     margin: 0;
     padding: 0;
 }
+
+
 /*---------------------PAGE:HEADER-------------------*/
 
 .navigation a {
@@ -256,7 +257,7 @@ h4 {
 
 .navigation a:hover:after {
     height: 3px;
-    background-color: rgb(128,188,163);
+    background-color: rgb(128, 188, 163);
 }
 
 .navigation li {
@@ -272,6 +273,7 @@ h4 {
     -ms-flex-pack: center;
     justify-content: center;
 }
+
 
 /*---------------------MAIN/BIO-------------------*/
 
@@ -289,7 +291,7 @@ h4 {
 
 .bio-banner {
     width: 100%;
-    background-color: rgb(78,107,102);
+    background-color: rgb(78, 107, 102);
     color: rgb(255, 255, 255);
     border-radius: 1px;
 }
@@ -313,7 +315,7 @@ h4 {
 }
 
 .skill-entry:hover {
-    background-color: rgb(128,188,163);
+    background-color: rgb(128, 188, 163);
 }
 
 .skills ul {
@@ -326,7 +328,7 @@ h4 {
 }
 
 .skill-entry {
-    background-color: rgb(78,107,102);
+    background-color: rgb(78, 107, 102);
     margin: 5px;
     padding: 5px;
     border-radius: 2px;
@@ -339,7 +341,9 @@ h4 {
     padding: 5px;
 }
 
+
 /*---------------------FOOTER-------------------*/
+
 .footer-list {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -356,10 +360,16 @@ h4 {
     margin: 3px;
     padding: 2px 6px 5px 5px;
     border-radius: 2px;
-    background-color: rgb(78,107,102);
+    background-color: rgb(78, 107, 102);
     box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
-    font-size:20px;
+    font-size: 20px;
+    transition: background-color .2s ease-in;
 }
+
+.footer-list-entry:hover {
+    background-color: rgb(128, 188, 163);
+}
+
 
 /*------------------MEDIA QUERIES------------------------*/
 
@@ -378,12 +388,12 @@ h4 {
         margin: 0 0 5px 0;
     }
     .entry-fig {
-        width:calc((100% - 5px * 2));
+        width: calc((100% - 5px * 2));
     }
     .entry-description {
-        width:calc((100% - 5px * 2));
-        margin-top:0;
-        padding-left:5px;
+        width: calc((100% - 5px * 2));
+        margin-top: 0;
+        padding-left: 5px;
     }
 }
 
@@ -402,20 +412,19 @@ h4 {
         margin: 0 0 5px 0;
     }
     .entry-fig {
-        width:calc((100% - 5px * 2));
+        width: calc((100% - 5px * 2));
     }
     .entry-description {
-        width:calc((100% - 5px * 2));
-        margin-top:0;
-        padding-left:5px;
+        width: calc((100% - 5px * 2));
+        margin-top: 0;
+        padding-left: 5px;
     }
-
 }
 
 @media screen and (min-width:1001px) and (max-width:1600px) {
     .bio-container {
         width: calc((100% - 10px)*(3/5));
-        margin:0 10px 0 0;
+        margin: 0 10px 0 0;
     }
     .work {
         width: calc((100% - 10px)*(2/5));
@@ -428,19 +437,18 @@ h4 {
         margin: 0 0 5px 0;
     }
     .education .entry-fig {
-        width:calc((100% - 5px * 2));
+        width: calc((100% - 5px * 2));
     }
     .education .entry-description {
-        width:calc((100% - 5px * 2));
-        margin-top:0;
-        padding-left:5px;
+        width: calc((100% - 5px * 2));
+        margin-top: 0;
+        padding-left: 5px;
     }
-
 }
 
 @media screen and (min-width:1601px) {
     .page-main {
-        max-width:1600px;
+        max-width: 1600px;
     }
     .bio-container {
         width: calc((100% - 10px * 2)*(1/3));
@@ -448,21 +456,21 @@ h4 {
     .work,
     .education {
         width: calc((100% - 10px * 2)*(1/3));
-        margin-left:10px;
+        margin-left: 10px;
     }
     .entry {
         width: calc((100% - 5px - 1px * 2 * 2)*(1/2));
-        margin-right:5px;
+        margin-right: 5px;
     }
     .entry:nth-of-type(2n) {
-        margin-right:0;
+        margin-right: 0;
     }
     .entry-fig {
-        width:calc((100% - 5px * 2));
+        width: calc((100% - 5px * 2));
     }
     .entry-description {
-        width:calc((100% - 5px * 2));
-        margin-top:0;
-        padding-left:5px;
+        width: calc((100% - 5px * 2));
+        margin-top: 0;
+        padding-left: 5px;
     }
 }
