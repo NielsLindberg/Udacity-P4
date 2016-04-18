@@ -1,5 +1,5 @@
 var bio = {
-    "htmlOuterContact": "<ul id=\"contact\" class=\"contact\"></ul>",
+    "htmlOuterFooter": "<ul id=\"footer-list\" class=\"footer-list\"></ul>",
     "htmlInnerTemplates": [{
         "bio-pic": "<section class=\"bio\"><div class=\"bio-banner\"><figure class=\"bio-fig\"><img src=\"%data%\" class=\"bio-pic\" ",
         "alt": "alt=\"%data%\"></figure>",
@@ -8,10 +8,11 @@ var bio = {
         "description": "<section class=\"about-me\"><h4>About Me</h4><p>%data%</p></section><section id=\"skills\" class=\"skills\"><h4>Skills</h4><ul></ul></section></section>"
     }, {
 
-        "mobile": "<li class=\"contact-entry\"><a target=\"blank_\" href=\"#\">telephone</a></li>",
-        "email": "<li class=\"contact-entry\"><a target=\"blank_\" href=\"#\">email</a></li>",
-        "github": "<li class=\"contact-entry\"><a target=\"blank_\" href=\"%data%\">github</a></li>",
-        "linkedin": "<li class=\"contact-entry\"><a target=\"blank_\" href=\"%data%\">LinkedIn</a></li>"
+        "email": "<li class=\"footer-list-entry\"><a target=\"blank_\" href=\"#\"><i class=\"fa fa-envelope\" aria-hidden=\"true\"></i></a></li>",
+        "github": "<li class=\"footer-list-entry\"><a target=\"blank_\" href=\"%data%\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i></a></li>",
+        "linkedin": "<li class=\"footer-list-entry\"><a target=\"blank_\" href=\"%data%\"><i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i></a></li>",
+        "facebook": "<li class=\"footer-list-entry\"><a target=\"blank_\" href=\"%data%\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li>",
+        "soundcloud": "<li class=\"footer-list-entry\"><a target=\"blank_\" href=\"%data%\"><i class=\"fa fa-soundcloud\" aria-hidden=\"true\"></i></a></li>"
 
     }, {
 
@@ -39,11 +40,12 @@ var bio = {
         I have a bachelor’s degree in Economics from Copenhagen Business School. \
         I've worked 6+ years in Nordea primarily as a programmer as well as a stakeholder on different IT projects."
     }],
-    "contactInfo": [{
-        "mobile": "+4527490778",
+    "footerLinks": [{
         "email": "eighthourcream@gmail.com",
         "github": "https://github.com/NielsLindberg",
-        "linkedin": "https://dk.linkedin.com/in/niels-lindberg-poulsen-440ab335"
+        "linkedin": "https://dk.linkedin.com/in/niels-lindberg-poulsen-440ab335",
+        "facebook": "https://www.facebook.com/niels.lindbergpoulsen",
+        "soundcloud": "https://soundcloud.com/user8234095"
     }],
     "skillsInfo": [{
         "skills": ["Business Intelligence", "Data Blending", "Qlikview", "ETL", "SQL", "Financial Analysis", "VBA", "Teradata", "Oracle", "Microsoft SQL Server", "Excel", "HTML", "CSS", "JavaScript", "Java"]

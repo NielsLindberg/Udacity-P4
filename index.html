@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -23,17 +24,17 @@
         </header>
         <main class="page-main">
             <section id="bio" class="bio-container section-container">
-                <h2 class="section-header">Bio</h2>
+                <h2 class="section-header"><i class="fa fa-user" aria-hidden="true"></i> Bio</h2>
                 <hr>
             </section>
             <section class="work section-container">
-                <h2 class="section-header">Work Experience</h2>
+                <h2 class="section-header"><i class="fa fa-briefcase" aria-hidden="true"></i> Work Experience</h2>
                 <hr>
                 <section id="work" class="entry-container">
                 </section>
             </section>
             <section class="education section-container">
-                <h2 class="section-header">Education</h2>
+                <h2 class="section-header"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
                 <hr>
                 <section id="education" class="entry-container">
                 </section>
@@ -51,7 +52,7 @@
     displayStuff('#bio', '#skills ul', bio, bio.skillsInfo, bio.htmlOuterSkills);
     displayStuff('#education', '#education .entry:last', education, education.schools, education.htmlOuterTemplate);
     displayStuff('#work', '#work .entry:last', work, work.jobs, work.htmlOuterTemplate);
-    displayStuff('#page-footer', '#contact', bio, bio.contactInfo, bio.htmlOuterContact);
+    displayStuff('#page-footer', '#footer-list', bio, bio.footerLinks, bio.htmlOuterFooter);
     </script>
 </body>
 
