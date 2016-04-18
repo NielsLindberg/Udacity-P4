@@ -148,7 +148,7 @@ h4 {
     border: 1px solid rgb(220, 220, 220);
     border-radius: 2px;
     width: calc(100% - 1px * 2);
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
 }
 
 .entry-titel {
@@ -364,10 +364,10 @@ h4 {
 @media screen and (max-width:700px) and (min-width:501px) {
     .entry {
         width: calc((100% - 1px * 2 * 2 - 5px)/2);
-        margin: 0 5px 10px 0;
+        margin: 0 5px 5px 0;
     }
     .entry:nth-of-type(2n) {
-        margin: 0 0 10px 0;
+        margin: 0 0 5px 0;
     }
     .entry-fig {
         width:calc((100% - 5px * 2));
@@ -388,10 +388,10 @@ h4 {
     }
     .entry {
         width: calc((100% - 1px * 2 * 3 - 5px * 2)/3);
-        margin: 0 5px 10px 0;
+        margin: 0 5px 5px 0;
     }
     .entry:nth-of-type(3n) {
-        margin: 0 0 10px 0;
+        margin: 0 0 5px 0;
     }
     .entry-fig {
         width:calc((100% - 5px * 2));
@@ -414,10 +414,10 @@ h4 {
     }
     .education .entry {
         width: calc((100% - 1px * 2 * 3 - 5px * 2)/3);
-        margin: 0 5px 10px 0;
+        margin: 0 5px 5px 0;
     }
     .education .entry:nth-of-type(3n) {
-        margin: 0 0 10px 0;
+        margin: 0 0 5px 0;
     }
     .education .entry-fig {
         width:calc((100% - 5px * 2));
