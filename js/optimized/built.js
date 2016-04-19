@@ -100,7 +100,7 @@ var education = {
         "degree": " - %data%</a></div>"
     }, {
         "picture": "<section class=\"entry-content\"><figure class=\"entry-fig\"><img class=\"entry-pic\" src=\"%data%\" ",
-        "srcset": "srcset=\"%data%\" sizes=\"(min-width: 1601px) 30vw, (min-width: 1001px) 30vw, (min-width: 701px) 30vw, (min-width:500px) 45vw, 40vw\" ",
+        "srcset": "srcset=\"%data%\" sizes=\"(min-width: 1601px) 30vw, (min-width: 1001px) 30vw, (min-width: 701px) 30vw, (min-width: 501px) 45vw, 40vw\" ",
         "alt": "alt=\"%data%\"></img></figure>",
         "description": "<aside class=\"entry-description\"><p>%data%</p></aside></section>"
     }, {
@@ -168,7 +168,7 @@ var work = {
         "title": " - %data%</a></div>"
     },  {
         "picture": "<section class=\"entry-content\"><figure class=\"entry-fig\"><img class=\"entry-pic\" src=\"%data%\" ",
-        "srcset": "srcset=\"%data%\" sizes=\"(min-width: 1601px) 30vw, (min-width: 1001px) 20vw, (min-width: 701px) 30vw, (min-width:500px) 45vw, 40vw\" ",
+        "srcset": "srcset=\"%data%\" sizes=\"(min-width: 1601px) 30vw, (min-width: 1001px) 20vw, (min-width: 701px) 30vw, (min-width: 501px) 45vw, 40vw\" ",
         "alt": "alt=\"%data%\"></img></figure>",
         "description": "<aside class=\"entry-description\"><p>%data%</p></aside></section>"
     }, {
