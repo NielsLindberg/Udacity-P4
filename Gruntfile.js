@@ -28,13 +28,34 @@ module.exports = function(grunt) {
                 src: ['js/builder.js', 'js/bio.js', 'js/education.js', 'js/work.js'],
                 dest: 'js/optimized/built.js',
             },
+        },
+        uglify: {
+            my_target: {
+                files: {
+                    'js/optimized/built.min.js': ['js/optimized/built.js']
+                }
+            }
+        },
+        cssmin: {
+            options: {
+                shorthandCompacting: false,
+                roundingPrecision: -1
+            },
+            target: {
+                files: {
+                    'css/optimized/style.min.css': ['css/style.css']
+                }
+            }
         }
     });
 
-
     grunt.loadNpmTasks('grunt-responsive-images');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     grunt.registerTask('images', 'responsive_images');
     grunt.registerTask('concatjs', 'concat');
+    grunt.registerTask('minjs', 'uglify');
+    grunt.registerTask('mincss', 'cssmin');
 };
