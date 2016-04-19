@@ -29,13 +29,17 @@ function initializeMap() {
     // iterates through school locations and appends each location to
     // the locations array.
     education.schools.forEach(function(school){
+      if(school.hasOwnProperty('location')) {
       locations.push(school.location);
+      }
     });
 
     // iterates through work locations and appends each location to
     // the locations array.
     work.jobs.forEach(function(job){
+      if(job.hasOwnProperty('location')) {
       locations.push(job.location);
+      }
     });
 
     return locations;

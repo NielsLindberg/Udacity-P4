@@ -60,7 +60,7 @@ var education = {
         "degree": " - %data%</a></div>"
     }, {
         "picture": "<section class=\"entry-content\"><figure class=\"entry-fig\"><img class=\"entry-pic\" src=\"%data%\" ",
-        "srcset": "srcset=\"%data%\" sizes=\"(min-width: 1601px) 30vw, (min-width: 1001px) 30vw, (min-width: 701px) 30vw, (min-width: 501px) 45vw, 45vw\" ",
+        "srcset": "srcset=\"%data%\" sizes=\"(min-width: 1601px) 30vw, (min-width: 1001px) 30vw, (min-width: 701px) 30vw, (min-width: 501px) 45vw, 40vw\" ",
         "alt": "alt=\"%data%\"></img></figure>",
         "description": "<aside class=\"entry-description\"><p>%data%</p></aside></section>"
     }, {
@@ -110,7 +110,6 @@ var education = {
         "alt": "Picture of Örebro University"
     }, {
         "name": "Udacity.com",
-        "location": "Online",
         "degree": "Online degree",
         "description": "Taking a Front End Web Developer Nanodegree at Udacity to fill up any spare time i have between my university courses.",
         "dates": "18/01/2016 - 31/06/2016 (expected)",
@@ -199,13 +198,17 @@ function initializeMap() {
     // iterates through school locations and appends each location to
     // the locations array.
     education.schools.forEach(function(school){
+      if(school.hasOwnProperty('location')) {
       locations.push(school.location);
+      }
     });
 
     // iterates through work locations and appends each location to
     // the locations array.
     work.jobs.forEach(function(job){
+      if(job.hasOwnProperty('location')) {
       locations.push(job.location);
+      }
     });
 
     return locations;
