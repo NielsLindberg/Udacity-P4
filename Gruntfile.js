@@ -25,7 +25,7 @@ module.exports = function(grunt) {
                 separator: '',
             },
             dist: {
-                src: ['js/builder.js', 'js/bio.js', 'js/education.js', 'js/work.js'],
+                src: ['js/bio.js', 'js/education.js', 'js/work.js','js/map.js','js/builder.js'],
                 dest: 'js/optimized/built.js',
             },
         },
@@ -58,4 +58,5 @@ module.exports = function(grunt) {
     grunt.registerTask('concatjs', 'concat');
     grunt.registerTask('minjs', 'uglify');
     grunt.registerTask('mincss', 'cssmin');
+    grunt.registerTask('default', ['responsive_images', 'concat', 'uglify', 'cssmin']);
 };

@@ -24,6 +24,7 @@ var bio = {
         "alt": "Picture of Niels Lindberg-Poulsen",
         "name": "Niels Lindberg-Poulsen",
         "role": "Student at LTU, ORU & Udacity",
+        "location": "Copenhagen, Denmark",
 
         "description": "Hi, my name is \
         <strong>Niels Lindberg-Poulsen</strong>, I'm 26 years old and live in Copenhagen together with my Swedish girlfriend who is studying Business & IT.\

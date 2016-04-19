@@ -1,44 +1,3 @@
-//Generic function to display the different data in the different js objects.
-var displayStuff = function(parentContainer, sectionContainer, parentObject, sectionArray, outerTemplate) {
-    "use strict";
-    //Loop through all sectionArray objects
-    sectionArray.forEach(function(arrayObject) {
-
-        //for each sectionArray object append a DOM section
-        $(parentContainer).append(outerTemplate);
-
-        //Loop over all htmlTemplates
-        parentObject.htmlInnerTemplates.forEach(function(concatObject) {
-            var formattedDom = '';
-
-            //loop over all keys in htmlTemplates objects
-            Object.keys(concatObject).forEach(function(concatObjectKey) {
-
-                //if key matches a key in arrayObject create dom to append
-                if (arrayObject.hasOwnProperty(concatObjectKey)) {
-
-                    //in case the data is an array add a dom element for each value in it
-                    //on the bio.skills it adds an inner dom template for each value in the skills array.
-                    var currentValue = arrayObject[concatObjectKey];
-                    if (currentValue.constructor === Array) {
-                        currentValue.forEach(function(arrayObjectValue) {
-
-                            //takes the dom template and replaces all instances of %data% with the arrayValue
-                            formattedDom = formattedDom + concatObject[concatObjectKey].replace(/%data%/g, arrayObjectValue);
-                        });
-
-                        //else just add the dom element once
-                    } else {
-                        formattedDom = formattedDom + concatObject[concatObjectKey].replace(/%data%/g, currentValue);
-                    }
-                }
-            });
-
-            //append to current section **Order of htmlTemplates controls order of appending to DOM**
-            $(sectionContainer).append(formattedDom);
-        });
-    });
-};
 var bio = {
     "htmlOuterFooter": "<ul id=\"footer-list\" class=\"footer-list\"></ul>",
     "htmlInnerTemplates": [{
@@ -65,6 +24,7 @@ var bio = {
         "alt": "Picture of Niels Lindberg-Poulsen",
         "name": "Niels Lindberg-Poulsen",
         "role": "Student at LTU, ORU & Udacity",
+        "location": "Copenhagen, Denmark",
 
         "description": "Hi, my name is \
         <strong>Niels Lindberg-Poulsen</strong>, I'm 26 years old and live in Copenhagen together with my Swedish girlfriend who is studying Business & IT.\
@@ -100,7 +60,7 @@ var education = {
         "degree": " - %data%</a></div>"
     }, {
         "picture": "<section class=\"entry-content\"><figure class=\"entry-fig\"><img class=\"entry-pic\" src=\"%data%\" ",
-        "srcset": "srcset=\"%data%\" sizes=\"(min-width: 1601px) 30vw, (min-width: 1001px) 30vw, (min-width: 701px) 30vw, (min-width: 501px) 45vw, 40vw\" ",
+        "srcset": "srcset=\"%data%\" sizes=\"(min-width: 1601px) 30vw, (min-width: 1001px) 30vw, (min-width: 701px) 30vw, (min-width: 501px) 45vw, 45vw\" ",
         "alt": "alt=\"%data%\"></img></figure>",
         "description": "<aside class=\"entry-description\"><p>%data%</p></aside></section>"
     }, {
@@ -168,7 +128,7 @@ var work = {
         "title": " - %data%</a></div>"
     },  {
         "picture": "<section class=\"entry-content\"><figure class=\"entry-fig\"><img class=\"entry-pic\" src=\"%data%\" ",
-        "srcset": "srcset=\"%data%\" sizes=\"(min-width: 1601px) 30vw, (min-width: 1001px) 20vw, (min-width: 701px) 30vw, (min-width: 501px) 45vw, 40vw\" ",
+        "srcset": "srcset=\"%data%\" sizes=\"(min-width: 1601px) 30vw, (min-width: 1001px) 20vw, (min-width: 701px) 30vw, (min-width: 501px) 45vw, 45vw\" ",
         "alt": "alt=\"%data%\"></img></figure>",
         "description": "<aside class=\"entry-description\"><p>%data%</p></aside></section>"
     }, {
@@ -208,3 +168,211 @@ var work = {
         "description": "Daily operations work in a stand-up comedy club."
     }]
 };
+
+var googleMap = '<div id="map"></div>';
+var map;
+
+function initializeMap() {
+  var locations;
+
+  var mapOptions = {
+    disableDefaultUI: true
+  };
+
+  map = new google.maps.Map(document.querySelector('#map'), mapOptions);
+
+
+  /*
+  locationFinder() returns an array of every location string from the JSONs
+  written for bio, education, and work.
+  */
+  function locationFinder() {
+
+    // initializes an empty array
+    var locations = [];
+
+    // adds the single location property from bio to the locations array
+    bio.headerInfo.forEach(function (headerInfoObject) {
+          locations.push(headerInfoObject.location);
+    });
+
+    // iterates through school locations and appends each location to
+    // the locations array.
+    education.schools.forEach(function(school){
+      locations.push(school.location);
+    });
+
+    // iterates through work locations and appends each location to
+    // the locations array.
+    work.jobs.forEach(function(job){
+      locations.push(job.location);
+    });
+
+    return locations;
+  }
+
+  /*
+  createMapMarker(placeData) reads Google Places search results to create map pins.
+  placeData is the object returned from search results containing information
+  about a single location.
+  */
+  function createMapMarker(placeData) {
+
+    // The next lines save location data from the search result object to local variables
+    var lat = placeData.geometry.location.lat();  // latitude from the place service
+    var lon = placeData.geometry.location.lng();  // longitude from the place service
+    var name = placeData.formatted_address;   // name of the place from the place service
+    var bounds = window.mapBounds;            // current boundaries of the map window
+
+    // marker is an object with additional data about the pin for a single location
+    var marker = new google.maps.Marker({
+      map: map,
+      position: placeData.geometry.location,
+      title: name
+    });
+
+    // infoWindows are the little helper windows that open when you click
+    // or hover over a pin on a map. They usually contain more information
+    // about a location.
+    var infoWindow = new google.maps.InfoWindow({
+      content: name
+    });
+
+    google.maps.event.addListener(marker, 'click', function() {
+      infoWindow.open(map, marker, name);
+    });
+
+    // this is where the pin actually gets added to the map.
+    // bounds.extend() takes in a map location object
+    bounds.extend(new google.maps.LatLng(lat, lon));
+    // fit the map to the new marker
+    map.fitBounds(bounds);
+    // center the map
+    map.setCenter(bounds.getCenter());
+  }
+
+  /*
+  callback(results, status) makes sure the search returned results for a location.
+  If so, it creates a new map marker for that location.
+  */
+  function callback(results, status) {
+    if (status == google.maps.places.PlacesServiceStatus.OK) {
+      createMapMarker(results[0]);
+    }
+  }
+
+  /*
+  pinPoster(locations) takes in the array of locations created by locationFinder()
+  and fires off Google place searches for each location
+  */
+  function pinPoster(locations) {
+
+    // creates a Google place search service object. PlacesService does the work of
+    // actually searching for location data.
+    var service = new google.maps.places.PlacesService(map);
+
+    // Iterates through the array of locations, creates a search object for each location
+      locations.forEach(function(place){
+      // the search request object
+      var request = {
+        query: place
+      };
+
+      // Actually searches the Google Maps API for location data and runs the callback
+      // function with the search results after each search.
+      service.textSearch(request, callback);
+    });
+  }
+
+  // Sets the boundaries of the map based on pin locations
+  window.mapBounds = new google.maps.LatLngBounds();
+
+  // locations is an array of location strings returned from locationFinder()
+  locations = locationFinder();
+
+  // pinPoster(locations) creates pins on the map for each location in
+  // the locations array
+  pinPoster(locations);
+
+}
+
+// Calls the initializeMap() function when the page loads
+window.addEventListener('load', initializeMap);
+
+// Vanilla JS way to listen for resizing of the window
+// and adjust map bounds
+window.addEventListener('resize', function(e) {
+//Make sure the map bounds get updated on page resize
+map.fitBounds(mapBounds);
+});//Generic function to display the different data in the different js objects.
+var displayStuff = function(parentContainer, sectionContainer, parentObject, sectionArray, outerTemplate) {
+    "use strict";
+
+    //parentContainers: '#bio', '#education', '#work', '#page-footer'
+    //sectionContainers: '#bio', '#skills ul', '#education .entry:last', '#work .entry:last', '#footer-list'
+    //parentObjects: bio,  education, work
+    //sectionArrays: bio.headerInfo, bio.skillsInfo, bio.footerLinks, education.schools, work.jobs
+    //outerTemplates: bio.htmlOuterSkills, education.htmlOuterTemplate, work.htmlOuterTemplate
+
+    //Loop through all sectionArray objects
+    sectionArray.forEach(function(arrayObject) {
+
+        //arrayObjects: {name: schoolname, url: urlstring, degree: degreestring....}
+
+        //for each sectionArray object append a DOM section
+        $(parentContainer).append(outerTemplate);
+
+        //Loop over all htmlTemplates
+        parentObject.htmlInnerTemplates.forEach(function(concatObject) {
+            var formattedDom = '';
+
+            //concatObjects: {url: domTemplate, name: domTemplate, degree: domTemplate}
+
+            //loop over all keys in htmlTemplates objects
+            Object.keys(concatObject).forEach(function(concatObjectKey) {
+
+                //concatObjectKeys: name, url, degree ... (keys for innerdomteplates)
+
+                //if key matches a key in arrayObject create dom to append
+                if (arrayObject.hasOwnProperty(concatObjectKey)) {
+
+                    //innerdomtemplatekey:url is within school{name: schoolname, url: urlstring}.keys
+
+                    //in case the data is an array add a dom element for each value in it
+                    //on the bio.skills it adds an inner dom template for each value in the skills array.
+                    var currentValue = arrayObject[concatObjectKey];
+
+                    //currentvalues: school['url'], headerInfo['skills'], etc..
+                    if (currentValue.constructor === Array) {
+
+                    //headerInfo['skills'].constructor === Array -> TRUE
+
+                        currentValue.forEach(function(arrayObjectValue) {
+
+                    //arrayObjectValues: skills[0] = 'Business Intelligence', skills[1] = 'Data Blending', etc.
+
+                            //takes the dom template and replaces all instances of %data% with the arrayValue
+                            formattedDom = formattedDom + concatObject[concatObjectKey].replace(/%data%/g, arrayObjectValue);
+
+                        //concatObject[concatObjectKey]s: {skills: domTemplate} <- domTemplate.replace %data% w. 'Business Intelligence'
+
+                        });
+
+                        //else just add the dom element once
+                    } else {
+                        formattedDom = formattedDom + concatObject[concatObjectKey].replace(/%data%/g, currentValue);
+                    }
+                }
+            });
+
+            //append to current section **Order of htmlTemplates controls order of appending to DOM**
+            $(sectionContainer).append(formattedDom);
+        });
+    });
+};
+displayStuff('#bio', '#bio', bio, bio.headerInfo, '');
+displayStuff('#bio', '#skills ul', bio, bio.skillsInfo, bio.htmlOuterSkills);
+displayStuff('#education', '#education .entry:last', education, education.schools, education.htmlOuterTemplate);
+displayStuff('#work', '#work .entry:last', work, work.jobs, work.htmlOuterTemplate);
+displayStuff('#page-footer', '#footer-list', bio, bio.footerLinks, bio.htmlOuterFooter);
+$('#locations-map').append(googleMap);
