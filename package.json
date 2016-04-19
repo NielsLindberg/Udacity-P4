@@ -1,0 +1,24 @@
+{
+  "name": "p4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NielsLindberg/Udacity-P4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NielsLindberg/Udacity-P4/issues"
+  },
+  "homepage": "https://github.com/NielsLindberg/Udacity-P4#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-responsive-images": "^0.1.7"
+  }
+}

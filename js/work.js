@@ -6,6 +6,7 @@ var work = {
         "title": " - %data%</a></div>"
     },  {
         "picture": "<section class=\"entry-content\"><figure class=\"entry-fig\"><img class=\"entry-pic\" src=\"%data%\" ",
+        "srcset": "srcset=\"%data%\" sizes=\"(min-width: 1601px) 30vw, (min-width: 1001px) 20vw, (min-width: 701px) 30vw, (min-width:500px) 45vw, 40vw\" ",
         "alt": "alt=\"%data%\"></img></figure>",
         "description": "<aside class=\"entry-description\"><p>%data%</p></aside></section>"
     }, {
@@ -15,7 +16,8 @@ var work = {
     "jobs": [{
         "employer": "Nordea Markets",
         "title": "Assistant Analyst",
-        "picture": "images/Nordea1.png",
+        "picture": "images/optimized/Nordea1-400.png",
+        "srcset": "images/optimized/Nordea1-200.png 200w, images/optimized/Nordea1-300.png 300w, images/optimized/Nordea1-400.png 400w",
         "url": "http://www.nordeamarkets.com/",
         "alt": "Picture of Nordea",
         "dates": "01/05/2011 - 30/01/2016",
@@ -25,7 +27,8 @@ var work = {
     }, {
         "employer": "Nordea Bank",
         "title": "Temp. Employee",
-        "picture": "images/Nordea2.png",
+        "picture": "images/optimized/Nordea2-400.png",
+        "srcset": "images/optimized/Nordea2-200.png 200w, images/optimized/Nordea2-300.png 300w, images/optimized/Nordea2-400.png 400w",
         "url": "http://www.nordea.com/",
         "alt": "Picture of Nordea",
         "dates": "01/02/2009 - 30/08/2010",
@@ -34,7 +37,8 @@ var work = {
     }, {
         "employer": "Comedy Zoo",
         "title": "Stafff Employee",
-        "picture": "images/ComedyZoo.png",
+        "picture": "images/optimized/ComedyZoo-400.png",
+        "srcset": "images/optimized/ComedyZoo-200.png 200w, images/optimized/ComedyZoo-300.png 300w, images/optimized/ComedyZoo-400.png 400w",
         "url": "http://www.fbi.dk/comedy-zoo",
         "alt": "Picture of Comedy Zoo",
         "dates": "01/01/2007 - 30/05/2011",
