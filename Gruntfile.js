@@ -25,7 +25,7 @@ module.exports = function(grunt) {
                 separator: '',
             },
             dist: {
-                src: ['js/bio.js', 'js/education.js', 'js/work.js','js/map.js','js/builder.js'],
+                src: ['js/bio.js', 'js/education.js', 'js/work.js', 'js/map.js', 'js/builder.js'],
                 dest: 'js/optimized/built.js',
             },
         },
@@ -46,6 +46,31 @@ module.exports = function(grunt) {
                     'css/optimized/style.min.css': ['css/style.css']
                 }
             }
+        },
+        less: {
+            development: {
+                options: {
+                    paths: ['css/']
+                },
+                files: {
+                    'css/optimized/less.style.css': 'css/style.less'
+                }
+            },
+            production: {
+                options: {
+                    paths: ['css/'],
+                    plugins: [
+                        new(require('less-plugin-autoprefix'))({ browsers: ["last 2 versions"] })
+                    ],
+                    modifyVars: {
+                        imgPath: '"http://mycdn.com/path/to/images"',
+                        bgColor: 'red'
+                    }
+                },
+                files: {
+                    'css/optimized/less.style.css': 'css/style.less'
+                }
+            }
         }
     });
 
@@ -53,10 +78,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-less');
 
-    grunt.registerTask('images', 'responsive_images');
-    grunt.registerTask('concatjs', 'concat');
-    grunt.registerTask('minjs', 'uglify');
-    grunt.registerTask('mincss', 'cssmin');
     grunt.registerTask('default', ['responsive_images', 'concat', 'uglify', 'cssmin']);
 };
