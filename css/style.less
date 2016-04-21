@@ -27,6 +27,11 @@
             -ms-flex-line-pack: center;
             align-content: center;
         }
+        .align-end {
+            -webkit-align-content: end;
+            -ms-flex-line-pack: flex-end;
+            align-content: flex-end;
+        }
         .justify-start {
             -webkit-justify-content: flex-start;
             -ms-flex-pack: start;
@@ -36,6 +41,11 @@
             -webkit-justify-content: center;
             -ms-flex-pack: center;
             justify-content: center;
+        }
+        .justify-end {
+            -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
         }
     }
     .flex-child {
@@ -399,8 +409,8 @@ h4 {
     ul {
         padding: @majorsSpacing;
         .flexbox > .flex-parent > .display-flex;
-        .flexbox > .flex-parent > .flex-wrap(wrap);
-        .flexbox > .flex-parent > .align-start;
+        .flexbox > .flex-parent > .flex-wrap(wrap-reverse);
+        .flexbox > .flex-parent > .flex-direction(row-reverse);
         .majors-entry {
             font-size:13px;
             margin: @majorsSpacing;

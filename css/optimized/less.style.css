@@ -14,6 +14,11 @@
   -webkit-align-content: center;
           align-content: center;
 }
+.flexbox .flex-parent .align-end {
+  -ms-flex-line-pack: flex-end;
+  -webkit-align-content: flex-end;
+          align-content: flex-end;
+}
 .flexbox .flex-parent .justify-start {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -23,6 +28,11 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+.flexbox .flex-parent .justify-end {
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 .fonts {
   font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
@@ -347,12 +357,12 @@ h4 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-line-pack: start;
-  -webkit-align-content: flex-start;
-          align-content: flex-start;
+  -webkit-flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
 }
 .majors ul .majors-entry {
   font-size: 13px;

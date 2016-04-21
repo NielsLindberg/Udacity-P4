@@ -142,9 +142,9 @@ var education = {
         "picture": "<section class=\"entry-content\"><figure class=\"entry-fig\"><img class=\"entry-pic\" src=\"%data%\" ",
         "srcset": "srcset=\"%data%\" sizes=\"(min-width: 1601px) 30vw, (min-width: 1001px) 30vw, (min-width: 701px) 30vw, (min-width: 501px) 45vw, 40vw\" ",
         "alt": "alt=\"%data%\"></img></figure>",
-        "description": "<aside class=\"entry-description\"><p>%data%</p></aside><section class=\"majors\"><h4>Majors:</h4><ul>",
+        "description": "<aside class=\"entry-description\"><p>%data%</p></aside><br></section><section class=\"majors\"><ul>",
         "majors": "<li class=\"majors-entry\">%data%</li>",
-        "dates": "</ul></section></section><footer class=\"entry-footer\"><hr><p class=\"date-location-text\">%data%<br>",
+        "dates": "</ul></section><footer class=\"entry-footer\"><hr><p class=\"date-location-text\">%data%<br>",
         "date": "<footer class=\"entry-footer\"><hr><p class=\"date-location-text\">%data%</footer>",
         "location": "%data%</p></footer>"
     }],
