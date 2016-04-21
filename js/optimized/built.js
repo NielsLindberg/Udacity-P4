@@ -270,7 +270,7 @@ var work = {
         "srcset": "images/optimized/Nordea1-200.png 200w, images/optimized/Nordea1-300.png 300w, images/optimized/Nordea1-400.png 400w",
         "url": "http://www.nordeamarkets.com/",
         "alt": "Picture of Nordea",
-        "dates": "01/05/2011 - 30/01/2016",
+        "dates": "2011 - 2016",
         "location": "Copenhagen, Denmark",
         "description": "Working on different projects regarding developing marked requirements and internal initiatives assuring " +
                         "optimal implementation.<br><br>Developing & producing business intelligence solutions."
@@ -281,7 +281,7 @@ var work = {
         "srcset": "images/optimized/Nordea2-200.png 200w, images/optimized/Nordea2-300.png 300w, images/optimized/Nordea2-400.png 400w",
         "url": "http://www.nordea.com/",
         "alt": "Picture of Nordea",
-        "dates": "01/02/2009 - 30/08/2010",
+        "dates": "2009 - 2010",
         "location": "Copenhagen, Denmark",
         "description": "Servicing international banks regarding corporate events on their positions in danish stocks."
     }, {
@@ -291,7 +291,7 @@ var work = {
         "srcset": "images/optimized/ComedyZoo-200.png 200w, images/optimized/ComedyZoo-300.png 300w, images/optimized/ComedyZoo-400.png 400w",
         "url": "http://www.fbi.dk/comedy-zoo",
         "alt": "Picture of Comedy Zoo",
-        "dates": "01/01/2007 - 30/05/2011",
+        "dates": "2007 - 2011",
         "location": "Copenhagen, Denmark",
         "description": "Daily operations work in a stand-up comedy club."
     }],
