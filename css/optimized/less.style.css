@@ -481,6 +481,7 @@ h4 {
   }
   .projects {
     width: 100%;
+    margin: 0 0 10px 0;
   }
   .projects .entry {
     width: calc((100% - 1px * 2 * 4 - 5px * (4 - 1))/4);
