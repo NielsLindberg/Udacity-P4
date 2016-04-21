@@ -412,15 +412,16 @@ h4 {
 
 
 /* LOCATION SECTION SPECIFICS */
-
 .locations {
-    width: 33%;
+    width:100%;
+}
     .locations-map {
-        width: 100%;
-        height: 500px;
+        width: calc(~'100% - @{entrySpacing} * 2');
+        height: 260px;
+        margin: @entrySpacing;
         border: @borderWidth solid @border;
         border-radius: @borderRadius;
-        box-shadow: 0 0 5px 1px @shadow;
+        box-shadow: 0 1px 2px 1px @shadow;
         #map {
             height: 100%;
             width: 100%
@@ -430,7 +431,6 @@ h4 {
             max-height: none;
         }
     }
-}
 
 
 /*----------MEDIA QUERY--------------------------------------*/
@@ -489,10 +489,6 @@ h4 {
         width: calc(~'(100% - @{sectionSpacing})*(3/5)');
         margin: 0 @sectionSpacing 0 0;
     }
-    .locations {
-        width: calc(~'(100% - @{sectionSpacing})*(3/5)');
-        margin: 0 @sectionSpacing 0 0;
-    }
     .work {
         width: calc(~'(100% - @{sectionSpacing})*(2/5)');
     }
@@ -513,12 +509,12 @@ h4 {
 }
 
 @media screen and (min-width:1601px) {
-    @sectionColumns: 3;
     .page-main {
         max-width: 1600px;
     }
+    @sectionColumns: 3;
     .section-container {
-        width: calc(~'(100% - @{sectionSpacing} * (@{sectionColumns} - 1))/@{sectionColumns}');
+        width: calc(~'(100% - @{sectionSpacing}*(@{sectionColumns} - 1))*(1/@{sectionColumns})');
         margin: 0 @sectionSpacing @sectionSpacing 0;
     }
     .section-container:nth-of-type(@{sectionColumns}n) {

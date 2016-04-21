@@ -69,4 +69,6 @@ displayStuff('#bio', '#skills ul', bio, bio.skillsInfo, bio.htmlOuterSkills);
 displayStuff('#education', '#education .entry:last', education, education.schools, education.htmlOuterTemplate);
 displayStuff('#work', '#work .entry:last', work, work.jobs, work.htmlOuterTemplate);
 displayStuff('#page-footer', '#footer-list', bio, bio.footerLinks, bio.htmlOuterFooter);
+
+$('.bio').append(mapContainer);
 $('#locations-map').append(googleMap);
