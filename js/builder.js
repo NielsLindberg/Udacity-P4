@@ -1,5 +1,5 @@
 //Generic function to display the different data in the different js objects.
-var displayStuff = function(parentContainer, sectionContainer, parentObject, sectionArray, outerTemplate) {
+/*var displayStuff = function(parentContainer, sectionContainer, parentObject, sectionArray, outerTemplate) {
     "use strict";
 
     //parentContainers: '#bio', '#education', '#work', '#page-footer'
@@ -64,12 +64,11 @@ var displayStuff = function(parentContainer, sectionContainer, parentObject, sec
         });
     });
 };
-displayStuff('#bio', '#bio', bio, bio.headerInfo, '');
-displayStuff('#bio', '#skills ul', bio, bio.skillsInfo, bio.htmlOuterSkills);
-displayStuff('#education', '#education .entry:last', education, education.schools, education.htmlOuterTemplate);
-displayStuff('#work', '#work .entry:last', work, work.jobs, work.htmlOuterTemplate);
-displayStuff('#page-footer', '#footer-list', bio, bio.footerLinks, bio.htmlOuterFooter);
-displayStuff('#projects', '#projects .entry:last', projects, projects.projects, projects.htmlOuterTemplate);
+*/
+bio.display();
+education.display();
+work.display();
+projects.display();
 
 $('.bio').append(mapContainer);
 $('#locations-map').append(googleMap);

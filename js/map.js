@@ -1,6 +1,6 @@
-var mapContainer = "<section class=\"locations\"><h4><i class=\"fa fa-globe\" aria-hidden=\"true\"></i> Locations</h4>\
-                <div id=\"locations-map\" class=\"locations-map\">\
-                </div></section>";
+var mapContainer = "<section class=\"locations\"><h4><i class=\"fa fa-globe\" aria-hidden=\"true\"></i> Locations</h4>" +
+                "<div id=\"locations-map\" class=\"locations-map\">" +
+                "</div></section>";
 var googleMap = '<div id="map"></div>';
 var map;
 
@@ -24,7 +24,7 @@ function initializeMap() {
     var locations = [];
 
     // adds the single location property from bio to the locations array
-    bio.headerInfo.forEach(function (headerInfoObject) {
+    bio.contacts.forEach(function (headerInfoObject) {
           locations.push(headerInfoObject.location);
     });
 

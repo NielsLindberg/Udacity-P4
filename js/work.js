@@ -22,8 +22,8 @@ var work = {
         "alt": "Picture of Nordea",
         "dates": "01/05/2011 - 30/01/2016",
         "location": "Copenhagen, Denmark",
-        "description": "Working on different projects regarding developing marked requirements and internal initiatives assuring \
-                        optimal implementation.<br><br>Developing & producing business intelligence solutions."
+        "description": "Working on different projects regarding developing marked requirements and internal initiatives assuring " +
+                        "optimal implementation.<br><br>Developing & producing business intelligence solutions."
     }, {
         "employer": "Nordea Bank",
         "title": "Temp. Employee",
@@ -44,5 +44,28 @@ var work = {
         "dates": "01/01/2007 - 30/05/2011",
         "location": "Copenhagen, Denmark",
         "description": "Daily operations work in a stand-up comedy club."
-    }]
+    }],
+    "display": function() {
+         "use strict";
+        work.jobs.forEach(function(arrayObject) {
+            $('#work').append(work.htmlOuterTemplate);
+            work.htmlInnerTemplates.forEach(function(concatObject) {
+                var formattedDom = '';
+                Object.keys(concatObject).forEach(function(concatObjectKey) {
+                    if (arrayObject.hasOwnProperty(concatObjectKey)) {
+                        var currentValue = arrayObject[concatObjectKey];
+                        if (currentValue.constructor === Array) {
+                            currentValue.forEach(function(arrayObjectValue) {
+                                formattedDom = formattedDom + concatObject[concatObjectKey].replace(/%data%/g, arrayObjectValue);
+                            });
+                        } else {
+                            formattedDom = formattedDom + concatObject[concatObjectKey].replace(/%data%/g, currentValue);
+
+                        }
+                    }
+                });
+                $('#work .entry:last').append(formattedDom);
+            });
+        });
+    }
 };
