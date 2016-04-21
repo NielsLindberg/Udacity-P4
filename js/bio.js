@@ -20,7 +20,7 @@ var bio = {
 
     }],
     "headerInfo": [{
-        "bio-pic": "images/NLP.png",
+        "bio-pic": "images/assets/NLP.png",
         "alt": "Picture of Niels Lindberg-Poulsen",
         "name": "Niels Lindberg-Poulsen",
         "role": "Student at LTU, ORU & Udacity",
