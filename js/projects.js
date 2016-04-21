@@ -14,7 +14,7 @@ var projects = {
     "projects": [{
         "name": "Customer1",
         "picture": "http://placehold.it/600x400",
-        "srcset": "http://placehold.it/200x400 200w, http://placehold.it/300x400 300w, http://placehold.it/400x400 400w",
+        "srcset": "http://placehold.it/400x400 400w, http://placehold.it/600x400 600w, http://placehold.it/800x400 800w",
         "url": "#",
         "alt": "Picture of placeholder",
         "dates": "01/05/2011 - 30/01/2016",
@@ -22,7 +22,7 @@ var projects = {
     }, {
         "name": "Customer2",
         "picture": "http://placehold.it/600x400",
-        "srcset": "http://placehold.it/200x400 200w, http://placehold.it/300x400 300w, http://placehold.it/400x400 400w",
+        "srcset": "http://placehold.it/400x400 400w, http://placehold.it/600x400 600w, http://placehold.it/800x400 800w",
         "url": "#",
         "alt": "Picture of placeholder",
         "dates": "01/05/2011 - 30/01/2016",
@@ -30,7 +30,7 @@ var projects = {
     }, {
         "name": "Customer3",
         "picture": "http://placehold.it/600x400",
-        "srcset": "http://placehold.it/200x400 200w, http://placehold.it/300x400 300w, http://placehold.it/400x400 400w",
+        "srcset": "http://placehold.it/400x400 400w, http://placehold.it/600x400 600w, http://placehold.it/800x400 800w",
         "url": "#",
         "alt": "Picture of placeholder",
         "dates": "01/05/2011 - 30/01/2016",
@@ -38,7 +38,7 @@ var projects = {
     }, {
         "name": "Customer4",
         "picture": "http://placehold.it/600x400",
-        "srcset": "http://placehold.it/200x400 200w, http://placehold.it/300x400 300w, http://placehold.it/400x400 400w",
+        "srcset": "http://placehold.it/400x400 400w, http://placehold.it/600x400 600w, http://placehold.it/800x400 800w",
         "url": "#",
         "alt": "Picture of placeholder",
         "dates": "01/05/2011 - 30/01/2016",
@@ -46,7 +46,7 @@ var projects = {
     }, {
         "name": "Customer5",
         "picture": "http://placehold.it/600x400",
-        "srcset": "http://placehold.it/200x400 200w, http://placehold.it/300x400 300w, http://placehold.it/400x400 400w",
+        "srcset": "http://placehold.it/400x400 400w, http://placehold.it/600x400 600w, http://placehold.it/800x400 800w",
         "url": "#",
         "alt": "Picture of placeholder",
         "dates": "01/05/2011 - 30/01/2016",
@@ -54,7 +54,7 @@ var projects = {
     }, {
         "name": "Customer6",
         "picture": "http://placehold.it/600x400",
-        "srcset": "http://placehold.it/200x400 200w, http://placehold.it/300x400 300w, http://placehold.it/400x400 400w",
+        "srcset": "http://placehold.it/400x400 400w, http://placehold.it/600x400 600w, http://placehold.it/800x400 800w",
         "url": "#",
         "alt": "Picture of placeholder",
         "dates": "01/05/2011 - 30/01/2016",
