@@ -43,7 +43,8 @@ module.exports = function(grunt) {
             },
             target: {
                 files: {
-                    'css/optimized/style.min.css': ['css/style.css']
+                    'css/optimized/style.min.css': ['css/style.css'],
+                    'css/optimized/less.style.min.css': ['css/optimized/less.style.css']
                 }
             }
         },
@@ -80,5 +81,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-less');
 
-    grunt.registerTask('default', ['responsive_images', 'concat', 'uglify', 'cssmin']);
+    grunt.registerTask('default', ['responsive_images', 'concat', 'uglify','less', 'cssmin']);
 };
