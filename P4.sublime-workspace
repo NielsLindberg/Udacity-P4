@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"header",
+				"pageHeaderHeight"
+			],
+			[
 				"bd",
 				"bd+	border: ${1:1px} ${2:solid} ${3:#000};"
 			],
@@ -40,50 +44,34 @@
 	"buffers":
 	[
 		{
-			"file": "Gruntfile.js",
+			"file": "js/edu.js",
 			"settings":
 			{
-				"buffer_size": 1890,
+				"buffer_size": 6947,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 2319,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/map.js",
-			"settings":
-			{
-				"buffer_size": 4458,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/style.css",
-			"settings":
-			{
-				"buffer_size": 9371,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/C/Users/Niels/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 1808,
-				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "css/style.less",
 			"settings":
 			{
-				"buffer_size": 81,
+				"buffer_size": 14405,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/optimized/less.style.css",
+			"settings":
+			{
+				"buffer_size": 10725,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 2674,
 				"line_ending": "Windows"
 			}
 		}
@@ -124,7 +112,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 551.0
+		"width": 571.0
 	},
 	"console":
 	{
@@ -156,22 +144,42 @@
 	[
 		"/D/Workspace/Udacity/P4",
 		"/D/Workspace/Udacity/P4/css",
+		"/D/Workspace/Udacity/P4/css/optimized",
 		"/D/Workspace/Udacity/P4/js",
 		"/D/Workspace/Udacity/P4/js/optimized"
 	],
 	"file_history":
 	[
 		"/D/Workspace/Udacity/P4/js/work.js",
-		"/D/Workspace/Udacity/P4/js/builder.js",
+		"/C/Users/Niels/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/D/Workspace/Udacity/P4/js/edu.js",
 		"/D/Workspace/Udacity/P4/js/bio.js",
+		"/D/Workspace/Udacity/P4/js/map.js",
+		"/D/Workspace/Udacity/P4/projects.html",
+		"/D/Workspace/Udacity/P4/index.html",
+		"/D/Workspace/Udacity/P4/js/builder.js",
 		"/D/Workspace/Udacity/P4/js/optimized/built.js",
+		"/D/Workspace/Udacity/P4/js/projects.js",
+		"/C/Users/Niels/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/D/Workspace/Udacity/P4/css/style.css",
+		"/D/Workspace/Udacity/P4/js/footer.js",
+		"/D/Workspace/Udacity/P4/.gitignore",
+		"/D/Workspace/Udacity/P4/test/test",
+		"/D/Workspace/Udacity/P4/css/optimized/less.style.min.css",
+		"/D/Workspace/Udacity/P4/css/optimized/less.style.css",
+		"/C/Users/Niels/AppData/Roaming/Sublime Text 3/Packages/CSScomb/Default.sublime-keymap",
+		"/C/Users/Niels/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Niels/AppData/Roaming/Sublime Text 3/Packages/User/LESS.sublime-settings",
+		"/C/Users/Niels/AppData/Roaming/Sublime Text 3/Packages/LESS/LESS.sublime-settings",
+		"/C/Users/Niels/AppData/Roaming/Sublime Text 3/Packages/LESS/README.md",
+		"/D/Workspace/Udacity/P4/css/optimized/style.min.css",
+		"/D/Workspace/Udacity/P4/css/style.less",
+		"/C/Users/Niels/AppData/Roaming/Sublime Text 3/Packages/Color Highlighter/Default.sublime-keymap",
 		"/D/Workspace/Udacity/P4/js/education.js",
 		"/D/Workspace/frontend-nanodegree-resume/index.html",
 		"/D/Workspace/frontend-nanodegree-resume/js/helper.js",
 		"/D/Workspace/frontend-nanodegree-resume/js/resumeBuilder.js",
-		"/D/Workspace/Udacity/P4/projects.html",
 		"/D/Workspace/Udacity/P4/package.json",
-		"/D/Workspace/Udacity/P4/index.html",
 		"/D/Workspace/Udacity/P4/js/optimized/built.min.js",
 		"/D/workspace/udacity/p4/Gruntfile.js",
 		"/D/Workspace/Udacity/P3/js/bio.js",
@@ -209,7 +217,6 @@
 		"/C/Users/Niels/git-prompt.sh",
 		"/C/Users/Niels/AppData/Roaming/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
 		"/C/Users/Niels/AppData/Roaming/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
-		"/C/Users/Niels/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/D/Workspace/Udacity/finish.html",
 		"/D/Workspace/Udacity/start.html",
 		"/D/Workspace/Udacity/writing-selectors/index.html",
@@ -246,7 +253,6 @@
 		"/D/Workspace/LTU/AboutMe/images/js/resumeBuilder.js",
 		"/D/Workspace/LTU/AboutMe/images/js/bio.js",
 		"/D/Workspace/LTU/AboutMe/js/resumeBuilder.js",
-		"/C/Users/Niels/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
 		"/D/Workspace/LTU/AboutMe/AboutMe.sublime-project",
 		"/D/Workspace/GitTest/GitTest.sublime-project",
 		"/D/Workspace/GitTest/css/style.css",
@@ -271,24 +277,7 @@
 		"/D/Workspace/GitTest/bower_components/paper-tabs/paper-tab.html",
 		"/D/Workspace/GitTest/bower_components/paper-button/paper-button.html",
 		"/D/Workspace/GitTest/bower_components/paper-card/paper-card.html",
-		"/D/Workspace/GitTest/card-collapse.html",
-		"/D/Workspace/GitTest/bower_components/iron-iconset-svg/iron-iconset-svg.html",
-		"/D/Workspace/GitTest/bower_components/iron-icons/iron-icons.html",
-		"/D/Workspace/GitTest/vulcanize.html",
-		"/D/Workspace/GitTest/bower.json",
-		"/D/Workspace/GitTest/bower_components/paper-header-panel/paper-header-panel.html",
-		"/D/Workspace/GitTest/bower_components/paper-scroll-header-panel/paper-scroll-header-panel.html",
-		"/D/Workspace/GitTest/bower_components/paper-material/paper-material.html",
-		"/C/Users/Niels/Google Drive/IT-Study/Udacity/Front-end developer/portfolio/toplist/style.css",
-		"/C/Users/Niels/Google Drive/IT-Study/Udacity/Front-end developer/portfolio/Udacity.Portfolio/css/style.css",
-		"/C/Users/Niels/Google Drive/IT-Study/Udacity/Front-end developer/portfolio/toplist/index.html",
-		"/D/Workspace/GitTest/bower_components/paper-tooltip/paper-tooltip.html",
-		"/D/Workspace/GitTest/polymerelements/image-card.html",
-		"/D/Workspace/GitTest/css/custom-style.html",
-		"/D/Workspace/GitTest/bower_components/paper-header-panel/README.md",
-		"/D/Workspace/PolymerStarterKit/app/index.html",
-		"/C/Users/Niels/Google Drive/IT-Study/Udacity/Front-end developer/portfolio/Udacity.Portfolio/polymerelements/flip-image.html",
-		"/C/Users/Niels/Google Drive/IT-Study/Udacity/Front-end developer/portfolio/Udacity.Portfolio/bower.json"
+		"/D/Workspace/GitTest/card-collapse.html"
 	],
 	"find":
 	{
@@ -306,6 +295,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"background",
+			"link",
+			"center",
 			"callback",
 			"googlemap",
 			"coin",
@@ -346,160 +338,38 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Gruntfile.js",
+					"file": "js/edu.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1890,
+						"buffer_size": 6947,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								923,
-								923
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2319,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2068,
-								2068
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "js/map.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4458,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4136,
-								4136
+								3730,
+								3730
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
 							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1728.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "css/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9371,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								141,
-								60
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1440.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/C/Users/Niels/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1808,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								492,
-								492
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -509,32 +379,95 @@
 			"sheets":
 			[
 				{
-					"buffer": 5,
+					"buffer": 1,
 					"file": "css/style.less",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 81,
+						"buffer_size": 14405,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								80,
-								80
+								9354,
+								9354
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"spell_check": true,
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 6898.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/optimized/less.style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10725,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6981,
+								6981
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5994.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								838,
+								838
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -568,7 +501,7 @@
 		"cols":
 		[
 			0.0,
-			0.57143760815,
+			0.705864386072,
 			1.0
 		],
 		"rows":
@@ -616,7 +549,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},

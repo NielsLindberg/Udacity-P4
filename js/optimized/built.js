@@ -25,9 +25,9 @@ var bio = {
         "role": "Student at LTU, ORU & Udacity",
         "welcomeMessage": "Welcome to my online resume <i class=\"fa fa-thumbs-up\" aria-hidden=\"true\"></i>",
         "description": "Hi, my name is " +
-            "<strong>Niels Lindberg-Poulsen</strong>, I'm 26 years old and live in Copenhagen together with my Swedish girlfriend who is studying Business & IT." +
+            "<strong>Niels Lindberg-Poulsen</strong>, I'm 26 years old and live in Copenhagen." +
             "<br><br>" +
-            "I enjoy going to concerts and do so quite regularly. I've always enjoyed PC gaming and I still spent several hours a week playing various games. " +
+            "I enjoy going to concerts and do so quite regularly." +
             "Other than that I guess my interests are pretty broad, I like listening to audiobooks on history at the moment." +
             "<br><br>" +
             "This spring, I’m studying 6 distance courses; 4 bachelor level programming courses and one knowledge management course at " +
